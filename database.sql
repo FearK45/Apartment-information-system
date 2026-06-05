@@ -74,11 +74,13 @@ CREATE TABLE feedback (
 );
 
 -- Insert Sample Data
+-- Admin: email=admin@apartment.com, password=admin123
 INSERT INTO admins (email, password, name) VALUES 
-('admin@apartment.com', '$2y$10$SomeHashedPassword123456789', 'Admin');
+('admin@apartment.com', '$2y$10$5r/pYxPUFjPRLjKu.xJQcObMhYfW/iMQx7Y9Vv.mLq0Zqo/Yuu5Zi', 'Admin');
 
+-- Tenant: email=tenant@apartment.com, password=tenant123
 INSERT INTO users (name, email, password, contact) VALUES 
-('John Tenant', 'tenant@apartment.com', '$2y$10$SomeHashedPassword123456789', '9876543210');
+('John Tenant', 'tenant@apartment.com', '$2y$10$RvxO6xRWGLVyqVnqY7KSROFuVDEFkFJgKv8IqcnKx7VGhLvHeYfBi', '9876543210');
 
 INSERT INTO apartments (block, floor, type, rent, status) VALUES 
 ('A', '1', '1BHK', 15000, 'available'),
